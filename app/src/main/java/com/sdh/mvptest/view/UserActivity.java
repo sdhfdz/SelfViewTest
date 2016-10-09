@@ -16,6 +16,7 @@ import com.sdh.mvptest.SecondActivity;
 import com.sdh.mvptest.ui.ErrorCircle;
 import com.sdh.mvptest.ui.LoadingView;
 import com.sdh.mvptest.ui.MyClock;
+import com.sdh.mvptest.ui.WaveLoadingView;
 
 public class UserActivity extends AppCompatActivity {
 
@@ -24,6 +25,8 @@ public class UserActivity extends AppCompatActivity {
     private SeekBar seekBar;
     private ErrorCircle err;
     private LoadingView loadingView;
+    private WaveLoadingView waveloading;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,11 +36,13 @@ public class UserActivity extends AppCompatActivity {
         clock = (MyClock) findViewById(R.id.clock);
         err = (ErrorCircle) findViewById(R.id.err);
         loadingView= (LoadingView) findViewById(R.id.loading);
+        waveloading = (WaveLoadingView) findViewById(R.id.waveloading);
         seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
                 clock.setPercent(progress);
                 clock.setText(progress+"%");
+                waveloading.setPercent(progress);
             }
 
             @Override
