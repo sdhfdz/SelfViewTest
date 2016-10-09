@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="WaveView">
+        <attr name="waveCount" format="integer"/>
+        <attr name="waveWidth" format="integer"/>
+        <attr name="android:color"/>
+        <attr name="mode" >
+            <enum name = "circle" value="-1"/>
+            <enum name = "triangle" value = "-2"/>
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="PanelView">
+        <attr name="arcColor" format="color"/>
+        <attr name="arcWidth" format="dimension"/>
+        <attr name="android:text"/>
+        <attr name="tikeCount" format="integer"/>
+        <attr name="pointerColor" format="color"/>
+        <attr name="android:textSize"/>
+    </declare-styleable>
+</resources>

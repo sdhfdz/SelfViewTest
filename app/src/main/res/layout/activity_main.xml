@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:wavekk="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".view.UserActivity">
+
+
+   <!--<com.sdh.mvptest.ui.WaveView-->
+      <!--wavekk:mode="triangle"-->
+       <!--wavekk:waveWidth="10"-->
+       <!--wavekk:waveCount="20"-->
+       <!--android:color="#f00"-->
+       <!--android:layout_width="100dp"-->
+       <!--android:layout_height="100dp" />-->
+   <!--<com.sdh.mvptest.ui.MyView-->
+       <!--wavekk:mode="triangle"-->
+       <!--wavekk:waveWidth="10"-->
+       <!--wavekk:waveCount="20"-->
+       <!--android:color="#f00"-->
+       <!--android:layout_width="100dp"-->
+       <!--android:layout_height="100dp" />-->
+   <com.sdh.mvptest.ui.MyClock
+       android:id="@+id/clock"
+       wavekk:mode="triangle"
+         android:text="已完成"
+       android:layout_width="100dp"
+       android:layout_height="100dp" />
+
+   <SeekBar
+       android:id="@+id/seek"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="50dp"/>
+
+   <com.sdh.mvptest.ui.ErrorCircle
+       android:id="@+id/err"
+       android:layout_width="100dp"
+       android:layout_height="100dp" />
+   <com.sdh.mvptest.ui.LoadingView
+       android:id="@+id/loading"
+       android:layout_width="100dp"
+       android:layout_height="100dp" />
+   <Button
+
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="点击"
+       android:onClick="click"/>
+</LinearLayout>
